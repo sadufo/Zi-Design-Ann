@@ -1,0 +1,43 @@
+// Fonts raleway
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$font-raleway: 'Open Sans', sans-serif;
+
+// Accent color
+$accent-color: #F4E344;
+// Text color
+$text-color: #333333;
+// Dark color
+$dark-color: #202328;
+// Deep color
+$deep-color: #171A1A;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page__wrapper{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+li{
+    font-size: 18px;
+    font-family: $font-raleway;
+    color: #000000;
+}
+
+h1{
+    font-size: 64px;
+    font-family: $font-raleway;
+    font-weight: 300;
+    color:  #FFFFFF;;
+}

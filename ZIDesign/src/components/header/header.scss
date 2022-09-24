@@ -1,0 +1,51 @@
+@import "../../assets/global_var/global_var.scss";
+.header{
+    width: 100%;
+    background: #202328;
+    height: 100vh;
+    display: flex;
+    
+    .header__title{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 24px;
+        h1{
+            color: #fff;
+            font-family: $font-raleway;
+            font-weight: 300;
+            font-size: 84px;
+        }
+        h2{
+            width: 228px;
+            height: 42.6px;
+            background: rgba(244, 227, 68, 0.7);
+            font-family: $font-raleway;
+            font-weight: 500;
+            font-size: 16px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0px 5px;
+        }
+        p{
+        width: 296px;
+        height: 87px;
+        font-family: $font-raleway;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        background: rgba(32, 35, 40, 0.5);
+        border-radius: 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        }
+    }
+}
