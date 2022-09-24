@@ -7,6 +7,7 @@ import Header from './components/header/header.vue';
 <template>
     <div class="page__wrapper">
             <Header/>
+            qwdqwdqwdwq
     </div>
 </template>
 
