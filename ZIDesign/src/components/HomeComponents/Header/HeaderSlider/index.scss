@@ -1,0 +1,19 @@
+.mySwiper {
+     height: 100%;
+     width: 100%;
+     position: relative;
+     border-radius: 10px;
+     overflow: hidden;
+     .swiper-wrapper{
+          .slider_item {
+               
+               img {
+                    width: 100%;
+                    height: 100%;
+               }
+          }
+     }
+
+}
+
+
