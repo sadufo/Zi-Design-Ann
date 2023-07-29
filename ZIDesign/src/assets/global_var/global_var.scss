@@ -1,7 +1,11 @@
 // Fonts raleway
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+// Fonts roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-$font-raleway: 'Open Sans', sans-serif;
+
+$font-raleway:'Raleway', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
 
 // Accent color
 $accent-color: #F4E344;
@@ -11,6 +15,7 @@ $text-color: #333333;
 $dark-color: #202328;
 // Deep color
 $deep-color: #171A1A;
+
 
 *{
     margin: 0;
@@ -36,8 +41,63 @@ a{
 }
 
 h1{
-    font-size: 64px;
     font-family: $font-raleway;
+    font-style: normal;
     font-weight: 300;
-    color:  #FFFFFF;;
+    font-size: 115px;
+    line-height: 0px;
+    color: #FFFFFF;
+}
+h2{
+    font-family: $font-raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 0px;
+    color: #000000;
+}
+h3{
+    font-family: $font-raleway;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+h4{
+    font-family: $font-raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+p{
+    font-family: $font-raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+button{
+    width: 288px;
+    height: 58px;
+    background: $accent-color;
+    border-radius: 0px 7px;
+    color: $text-color;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: $font-raleway;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    border-radius: 0;
+    transition: ease-in-out 0.5s;
+    width: 300px;
+    font-size: 15px;
 }

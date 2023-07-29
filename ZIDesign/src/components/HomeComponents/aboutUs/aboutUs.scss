@@ -1,0 +1,94 @@
+
+.aboutUs{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    .aboutUs__item{
+        display: flex;
+        p{
+            color:#333;
+        }
+        h4{
+            color: #F4E344;
+        }
+        .aboutUs__img{
+            width: 50%;
+            position: relative;
+            overflow: hidden;
+            .topbox{
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 40%;
+                height: 50%;
+                background: #2023289f;
+            }
+            .swipebox{
+                width: 30%;
+                height: 10%;
+                z-index: 1001;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0 10%;
+                bottom: 100px;
+                left: 53%;
+                background:  #2023289f;
+                text-transform: uppercase;
+                p{
+                    color: #fff;
+                }
+            }
+            img{
+                width: 80%;
+                position: relative;
+                top: 15px;
+                left: 15px;
+                z-index: 101;
+            }
+        }
+        .aboutUs__info{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 100px 0;
+            width: 50%;
+            h3{
+                color: #333;
+            }
+            .info__item{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .item__title{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h4{
+                        color: #F4E344;
+                    }
+                    svg{
+                        width: 30px;
+                    }
+                }
+                .item__text{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                p:last-child{
+                    display: flex;
+                    text-align: right;
+                }
+                .item__btn{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}

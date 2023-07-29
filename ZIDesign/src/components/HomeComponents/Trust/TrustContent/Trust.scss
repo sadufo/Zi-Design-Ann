@@ -1,0 +1,59 @@
+@import '../../../../assets/global_var/global_var.scss';
+
+.trust{
+    width: 100%;
+    background-color: #202328;
+    padding: 101px 0;
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #6F7A8B;
+        font-size: 26px;
+        
+    }
+    &__point{
+        width: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 39px 0;
+        .item{
+            width: 10vw;
+            display: flex;
+            flex-direction: column;
+            gap: 10px 0;
+        }
+        h3{
+            color: #a5c7ff;
+        }
+        .trust__accent-col{
+            color: #a5c7ff;
+            font-weight: bold;
+        }
+        .trust__underline{
+            height: 60px;
+            width: fit-content;
+            border-bottom: 1px solid #a5c7ff21;
+        }
+        .point__item{
+            display: flex;
+            gap: 16px ;
+            flex-wrap: wrap;
+        }
+    }
+    &__info{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px 0;
+        text-align: right;
+        align-items: flex-end;
+        .trust__info-number{
+            color: #fff;
+            text-decoration: none;
+            font-size: 26px;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 <script setup>
-import './nav.scss'
+import style from './nav.scss'
+import globalStyle from '../../../assets/global_var/global_var.scss'
 </script>
 
 <template>

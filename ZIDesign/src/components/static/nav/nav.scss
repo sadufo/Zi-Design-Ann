@@ -1,4 +1,4 @@
-
+@import '../../../assets/global_var/global_var.scss';
 .nav{
     width: 90%;
     height: 10vh;
@@ -15,9 +15,12 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
         .nav__logo{
             width: auto;
+            height: 100%;
+            display: flex;
+            justify-content: center;
             .logo__item{
                 display: flex;
-                width: 100px;
+                width: 109px;
                 cursor: pointer;
             }
         
@@ -37,27 +40,25 @@
                     justify-content: center;
                     text-decoration: none;
                     border-radius: 0px 5px;
+                    font-weight: bold;
                 }
             }
             a:hover{
-                color: #fff;
-                background: rgba(0, 0, 0, 0.8);
-            }
-            .router-link-active {
-                
+                border: none;
                 background: rgba(0, 0, 0, 0.3);
-           }
+            }
         }
         .nav__social{
-            width: 60px;
+            width: 110px;
+            height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 25px;
             background: rgba(0, 0, 0, 0.25);
             border-radius: 70px;
             img{
-                width: 20px;
+                width: 24px;
             }
         }
 }

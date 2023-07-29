@@ -5,10 +5,10 @@
      <swiper :modules="[EffectFade]" effect="fade" @swiper="onSwiper" @slideChange="onSlideChange" class="mySwiper">
           <HeaderContent />
           <swiper-slide class="slider_item"><img src="@/assets/img/slider.png" alt=""></swiper-slide>
+          <swiper-slide class="slider_item"><img src="@/assets/img/slider.png" alt=""></swiper-slide>
           <swiper-slide class="slider_item"><img
                     src="https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
                     alt=""></swiper-slide>
-          <swiper-slide class="slider_item"><img src="@/assets/img/slider.png" alt=""></swiper-slide>
           <swiper-slide class="slider_item"><img src="@/assets/img/slider.png" alt=""></swiper-slide>
           <SliderControl :start="start" :end="end" :index="index" :length="length" />
      </swiper>

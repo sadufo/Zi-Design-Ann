@@ -1,7 +1,7 @@
 @import "../../../../assets/global_var/global_var.scss";
 .header{
     width: 100%;
-    height: 100vh;
+    height: 1095px;
     display: flex;
     z-index: 2;
     top: 0;
@@ -9,44 +9,49 @@
     position: absolute;
     .header__title{
         width: 30%;
-        height: 100%;
+        height: 87%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        gap: 24px;
         h1{
             color: #fff;
             font-family: $font-raleway;
             font-weight: 300;
             font-size: 84px;
+            margin-bottom: 70px;
         }
-        h2{
-            width: 228px;
-            height: 42.6px;
+        .header__subtitle{
+            width: 420px;
+            height: 50px;
             background: rgba(244, 227, 68, 0.7);
             font-family: $font-raleway;
-            font-weight: 500;
-            font-size: 16px;
+            font-weight: bold;
+            font-size: 25px;
             display: flex;
             text-align: center;
             justify-content: center;
             align-items: center;
             border-radius: 0px 5px;
+            color: $text-color;
+            margin-bottom: 29px;
         }
         p{
-            width: 70%;
+            width: 487px;
+            height: 117px;
             box-sizing: border-box;
             padding: 5%;
-        font-family: $font-raleway;
-        font-weight: 500;
-        font-size: 16px;
-        color: #FFFFFF;
-        background: rgba(32, 35, 40, 0.5);
-        border-radius: 0px 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+            font-family: $font-raleway;
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 0.085em;
+            line-height: 21px;
+            color: #FFFFFF;
+            background: rgba(32, 35, 40, 0.5);
+            border-radius: 0px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
         }
     }
