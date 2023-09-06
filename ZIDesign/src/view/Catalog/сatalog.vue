@@ -6,13 +6,18 @@ import ProductsItem from '../../components/CatalogComponents/item/productsItem.v
 
 <template>
          <Nav class="itsNav"/>
-         <ProductsNavigation/>
-         <ProductsItem/>
+         <div class="comp-row">
+             <ProductsNavigation/>
+             <ProductsItem/>
+         </div>
 </template>
 
 <style scoped>
     .itsNav{
         position: relative;
+    }
+    .comp-row{
+        display: flex;
     }
 </style>
 
