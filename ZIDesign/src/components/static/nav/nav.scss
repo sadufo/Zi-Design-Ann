@@ -1,7 +1,7 @@
 @import '../../../assets/global_var/global_var.scss';
 .nav{
     width: 90%;
-    height: 10vh;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,6 +41,7 @@
                     text-decoration: none;
                     border-radius: 0px 5px;
                     font-weight: bold;
+                    text-wrap: nowrap;
                 }
             }
             a:hover{
