@@ -2,6 +2,7 @@
 import Nav from '@/components/static/nav/nav.vue';
 import ProductsNavigation from '../../components/CatalogComponents/navigation/productsNavigation.vue'
 import ProductsItem from '../../components/CatalogComponents/item/productsItem.vue'
+import Footer from '../../components/static/footer/footer.vue'
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import ProductsItem from '../../components/CatalogComponents/item/productsItem.v
              <ProductsNavigation/>
              <ProductsItem/>
          </div>
+         <Footer/>
 </template>
 
 <style scoped>

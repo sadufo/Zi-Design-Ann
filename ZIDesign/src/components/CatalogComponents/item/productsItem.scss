@@ -5,10 +5,11 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 5%;
+    align-items: center;
+    justify-content: space-evenly;
     background: #20232812;
     gap: 50px 100px;
+    padding: 5% 7%;
     .testItem{
         width: 350px;
         height: auto;
