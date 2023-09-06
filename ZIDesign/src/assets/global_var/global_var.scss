@@ -16,7 +16,6 @@ $dark-color: #202328;
 // Deep color
 $deep-color: #171A1A;
 
-
 *{
     margin: 0;
     padding: 0;
@@ -41,6 +40,7 @@ a{
     font-weight: 500;
     line-height: normal;
     color: #000000;
+    text-decoration: none;
 }
 
 h1{

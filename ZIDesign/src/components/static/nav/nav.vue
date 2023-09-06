@@ -4,7 +4,7 @@ import globalStyle from '../../../assets/global_var/global_var.scss'
 </script>
 
 <template>
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="nav">
             <div class="nav__logo">
                 <img class="logo__item" src="../../../assets/img/Logo.svg" alt="logo">
@@ -23,7 +23,7 @@ import globalStyle from '../../../assets/global_var/global_var.scss'
                 <a href="#"><img src="../../../assets/img/facebook.svg" alt="facebook"></a>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </template>
 
 <style scoped>
