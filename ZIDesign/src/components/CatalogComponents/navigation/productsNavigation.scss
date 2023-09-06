@@ -1,17 +1,15 @@
 @import '../../../assets/global_var/global_var.scss';
 
 .prodNav{
-    // position: sticky;
-    // top: 11%;
     width: 350px;
     height: 100vh;
-    display: flex;
     border-right: 1px solid rgba(0, 0, 0, 0.15);
-    overflow: hidden;
     &__links{
-        width: 100%;
+        width: 80%;
         height: 100%;
         gap: 30px 0;
+        position: sticky;
+        top: 0;
         .links{
             width: 100%;
             display: flex;
