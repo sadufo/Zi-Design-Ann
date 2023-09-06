@@ -9,5 +9,45 @@ import style from "./productsItem.scss"
             <img src="../../../assets/img/card-img1.png" alt="#">
             <button>lololol</button>
         </div>
+        <div class="testItem">
+            <h2>Кровать</h2>
+            <img src="../../../assets/img/card-img1.png" alt="#">
+            <button>lololol</button>
+        </div>
+        <div class="testItem">
+            <h2>Кровать</h2>
+            <img src="../../../assets/img/card-img1.png" alt="#">
+            <button>lololol</button>
+        </div>
+        <div class="testItem">
+            <h2>Кровать</h2>
+            <img src="../../../assets/img/card-img1.png" alt="#">
+            <button>lololol</button>
+        </div>
+        <div class="testItem">
+            <h2>Кровать</h2>
+            <img src="../../../assets/img/card-img1.png" alt="#">
+            <button>lololol</button>
+        </div>
+        <div class="testItem">
+            <h2>Кровать</h2>
+            <img src="../../../assets/img/card-img1.png" alt="#">
+            <button>lololol</button>
+        </div>
+        <div class="testItem">
+            <h2>Кровать</h2>
+            <img src="../../../assets/img/card-img1.png" alt="#">
+            <button>lololol</button>
+        </div>
+        <div class="testItem">
+            <h2>Кровать</h2>
+            <img src="../../../assets/img/card-img1.png" alt="#">
+            <button>lololol</button>
+        </div>
+        <div class="testItem">
+            <h2>Кровать</h2>
+            <img src="../../../assets/img/card-img1.png" alt="#">
+            <button>lololol</button>
+        </div>
     </div>
 </template>

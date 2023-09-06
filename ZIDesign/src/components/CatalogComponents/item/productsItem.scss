@@ -5,8 +5,10 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     padding-top: 5%;
+    background: #20232812;
+    gap: 50px 100px;
     .testItem{
         width: 20vw;
         height: auto;
