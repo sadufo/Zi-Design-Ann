@@ -1,13 +1,35 @@
 <script>
 import style from './productsNavigation.scss';
 import gStyle from '../../../assets/global_var/global_var.scss';
-// import itemCardList from '../item/productsItem.vue'
-import style2 from "../item/itemcard/productsitemcard.scss"
 import productsItemCard from "../item/itemCard/productsitemcard.vue"
 
 export default {
   components: {
     productsItemCard,
+    },
+    data() {
+    return {
+      items: [
+        { collect: "Толедо", id: 1, category: "Кровати", title: "Толедо-2", imgUrl: "/src/assets/img/card-img1.png" },
+        { collect: "Толедо", id: 2, category: "Шкафы", title: "Толедо-2", imgUrl: "/src/assets/img/card-img2.png" },
+        { collect: "Толедо", id: 1, category: "Кровати", title: "Толедо-2", imgUrl: "/src/assets/img/card-img1.png" },
+        { collect: "Толедо", id: 2, category: "Шкафы", title: "Толедо-2", imgUrl: "/src/assets/img/card-img2.png" },
+      ],
+      selectedCategory: null,
+    };
+  },
+  computed: {
+    filteredItems() {
+      if (this.selectedCategory) {
+        return this.items.filter((item) => item.category === this.selectedCategory);
+      }
+      return this.items;
+    },
+  },
+  methods: {
+    filterItems(category) {
+      this.selectedCategory = category;
+    },
   },
 }
 </script>
@@ -21,11 +43,11 @@ export default {
                 <button>Комоды</button>
                 <button>Тумбы ТВ</button>
                 <button>Будуарные столы</button>
-                <button>Шкафы</button>
+                <button  @click="filterItems('Шкафы')">Шкафы</button>
                 <button>Пеналы</button>
                 <button>Письменные столы</button>
                 <button>Предметы декора</button>
-                <button>Кровать</button>
+                <button  @click="filterItems('Кровати')">Кровати</button>
             </div>
             <div class="links links__col">
                 <h2>Коллекции</h2>
@@ -44,47 +66,16 @@ export default {
         </div>
     </div>
     <div id="itemContainer" class="catalog__item">
-        <productsItemCard
-        :collect="'Толедо'"
-        :id="1"
-        :category="'кровать'"
-        :title="'Толедо-2'"
-        :imgUrl="'/src/assets/img/card-img1.png'"
-        />
-        <productsItemCard
-        :collect="'Толедо'"
-        :id="2"
-        :category="'шкаф'"
-        :title="'Толедо-2'"
-        :imgUrl="'/src/assets/img/card-img2.png'"
-        />
-        <productsItemCard
-        :collect="'Геометрия'"
-        :id="3"
-        :category="'кровать'"
-        :title="'Геометрия'"
-        :imgUrl="'/src/assets/img/card-img3.png'"
-        />
-        <productsItemCard
-        :collect="'Толедо'"
-        :id="1"
-        :category="'кровать'"
-        :title="'Толедо-2'"
-        :imgUrl="'/src/assets/img/card-img1.png'"
-        />
-        <productsItemCard
-        :collect="'Толедо'"
-        :id="2"
-        :category="'шкаф'"
-        :title="'Толедо-2'"
-        :imgUrl="'/src/assets/img/card-img2.png'"
-        />
-        <productsItemCard
-        :collect="'Геометрия'"
-        :id="3"
-        :category="'кровать'"
-        :title="'Геометрия'"
-        :imgUrl="'/src/assets/img/card-img3.png'"
-        />
+        <div v-for="item in filteredItems" :key="item.id">
+          <productsItemCard
+            class="itemCard"
+            :collect="item.collect"
+            :id="item.id"
+            :category="item.category"
+            :title="item.title"
+            :img-url="item.imgUrl"
+          ></productsItemCard>
+        </div>
     </div>
+
 </template>
