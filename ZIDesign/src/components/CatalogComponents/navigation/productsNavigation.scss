@@ -8,8 +8,17 @@
         width: 80%;
         height: 100%;
         gap: 30px 0;
-        position: sticky;
-        top: 0;
+        button{
+            height: 3vh;
+            width: auto;
+            background-color: transparent;
+            border: transparent;
+            text-align: left;
+        }
+        button:hover{
+            width: auto;
+            color: $accent-color;
+        }
         .links{
             width: 100%;
             display: flex;
@@ -24,4 +33,34 @@
             }
         }
     }
+}
+.catalog__item{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #20232812;
+    gap: 50px 100px;
+    padding: 5% 7%;
+    // .testItem{
+    //     width: 350px;
+    //     height: auto;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     gap: 20px 0;
+    //     h2{
+    //         color: black;
+
+    //     }
+    //     img{
+    //         width: 100%;
+    //     }
+    //     button{
+    //         background: black;
+    //         color: #fff;
+    //     }
+    // }
 }

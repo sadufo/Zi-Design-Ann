@@ -1,7 +1,7 @@
 <script setup>
 import Nav from '@/components/static/nav/nav.vue';
 import ProductsNavigation from '../../components/CatalogComponents/navigation/productsNavigation.vue'
-import ProductsItem from '../../components/CatalogComponents/item/productsItem.vue'
+// import ProductsItem from '../../components/CatalogComponents/item/productsItem.vue'
 import Footer from '../../components/static/footer/footer.vue'
 </script>
 
@@ -9,7 +9,7 @@ import Footer from '../../components/static/footer/footer.vue'
          <Nav class="itsNav"/>
          <div class="comp-row">
              <ProductsNavigation/>
-             <ProductsItem/>
+             <!-- <ProductsItem/> -->
          </div>
          <Footer/>
 </template>

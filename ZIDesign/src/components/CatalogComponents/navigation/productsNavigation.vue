@@ -1,6 +1,15 @@
 <script>
 import style from './productsNavigation.scss';
 import gStyle from '../../../assets/global_var/global_var.scss';
+// import itemCardList from '../item/productsItem.vue'
+import style2 from "../item/itemcard/productsitemcard.scss"
+import productsItemCard from "../item/itemCard/productsitemcard.vue"
+
+export default {
+  components: {
+    productsItemCard,
+  },
+}
 </script>
 
 <template>
@@ -8,30 +17,74 @@ import gStyle from '../../../assets/global_var/global_var.scss';
         <div class="prodNav__links">
             <div class="links links__item">
                 <h2>Продукция</h2>
-                <router-link to="/Кровать">Тумбы</router-link>
-                <router-link to="/Кровать">Комоды</router-link>
-                <router-link to="/Кровать">Тумбы ТВ</router-link>
-                <router-link to="/Кровать">Будуарные столы</router-link>
-                <router-link to="/Кровать">Шкафы</router-link>
-                <router-link to="/Кровать">Пеналы</router-link>
-                <router-link to="/Кровать">Письменные столы</router-link>
-                <router-link to="/Кровать">Предметы декора</router-link>
-                <router-link to="/Кровать">Кровать</router-link>
+                <button>Тумбы</button>
+                <button>Комоды</button>
+                <button>Тумбы ТВ</button>
+                <button>Будуарные столы</button>
+                <button>Шкафы</button>
+                <button>Пеналы</button>
+                <button>Письменные столы</button>
+                <button>Предметы декора</button>
+                <button>Кровать</button>
             </div>
             <div class="links links__col">
                 <h2>Коллекции</h2>
-                <router-link to="Толедо">Геометрия</router-link>
-                <router-link to="Толедо">Толедо</router-link>
-                <router-link to="Толедо">Валенсия</router-link>
-                <router-link to="Толедо">Сиена</router-link>
-                <router-link to="Толедо">Корсика</router-link>
-                <router-link to="Толедо">Прованс</router-link>
-                <router-link to="Толедо">Тоскана</router-link>
-                <router-link to="Толедо">Магия</router-link>
-                <router-link to="Толедо">Домино</router-link>
-                <router-link to="Толедо">Сиена-конфети</router-link>
-                <router-link to="Толедо">Корсика-слим</router-link>
+                <button>Геометрия</button>
+                <button>Толедо</button>
+                <button>Валенсия</button>
+                <button>Сиена</button>
+                <button>Корсика</button>
+                <button>Прованс</button>
+                <button>Тоскана</button>
+                <button>Магия</button>
+                <button>Домино</button>
+                <button>Сиена-конфети</button>
+                <button>Корсика-слим</button>
             </div>
         </div>
+    </div>
+    <div id="itemContainer" class="catalog__item">
+        <productsItemCard
+        :collect="'Толедо'"
+        :id="1"
+        :category="'кровать'"
+        :title="'Толедо-2'"
+        :imgUrl="'/src/assets/img/card-img1.png'"
+        />
+        <productsItemCard
+        :collect="'Толедо'"
+        :id="2"
+        :category="'шкаф'"
+        :title="'Толедо-2'"
+        :imgUrl="'/src/assets/img/card-img2.png'"
+        />
+        <productsItemCard
+        :collect="'Геометрия'"
+        :id="3"
+        :category="'кровать'"
+        :title="'Геометрия'"
+        :imgUrl="'/src/assets/img/card-img3.png'"
+        />
+        <productsItemCard
+        :collect="'Толедо'"
+        :id="1"
+        :category="'кровать'"
+        :title="'Толедо-2'"
+        :imgUrl="'/src/assets/img/card-img1.png'"
+        />
+        <productsItemCard
+        :collect="'Толедо'"
+        :id="2"
+        :category="'шкаф'"
+        :title="'Толедо-2'"
+        :imgUrl="'/src/assets/img/card-img2.png'"
+        />
+        <productsItemCard
+        :collect="'Геометрия'"
+        :id="3"
+        :category="'кровать'"
+        :title="'Геометрия'"
+        :imgUrl="'/src/assets/img/card-img3.png'"
+        />
     </div>
 </template>
