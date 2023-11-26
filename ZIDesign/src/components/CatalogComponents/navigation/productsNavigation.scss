@@ -2,12 +2,12 @@
 
 .prodNav{
     width: 350px;
-    height: 100vh;
+    height: auto;
     border-right: 1px solid rgba(0, 0, 0, 0.15);
-    // background-color: #202328;
+    background-color: #202328;
     &__links{
         width: 80%;
-        height: 100%;
+        height: auto;
         gap: 30px 0;
         button{
             height: 3vh;
@@ -15,6 +15,7 @@
             background-color: transparent;
             border: transparent;
             text-align: left;
+            color: #fff;
         }
         button:hover{
             width: auto;
@@ -28,6 +29,7 @@
             padding: 1% 25%;
             gap: 10px 0;
             h2{
+                color: $accent-color;
                 text-transform: uppercase;
                 font-weight: 900;
                 padding: 30px 0;
