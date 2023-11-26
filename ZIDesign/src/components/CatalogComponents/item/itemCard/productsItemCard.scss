@@ -1,15 +1,17 @@
 @import '../../../../assets/global_var/global_var.scss';
 
 .productsItemCard{
-    width: 600px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     gap: 30px 0;
     align-items: center;
-    background: transparent;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    padding-bottom: 10px;
     .collect{
         display: none;
     }
@@ -23,9 +25,24 @@
         display: none;
     }
     img{
-        width: 95%;
+        width: 100%;
     }
-    img:hover{
-        border-bottom: 4px solid $accent-color;
+    .title{
+        font-size: 25px;
+        font-weight: 900;
     }
+    .price{
+        font-size: 20px;
+        font-weight: 900;
+        color: orange;
+    }
+    // button{
+    //     background-color: transparent;
+    // }
+    // button:hover{
+    //     color: $accent-color;
+    // }
+}
+.productsItemCard:hover{
+    border-bottom: 3px solid $accent-color;
 }

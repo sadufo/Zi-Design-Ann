@@ -7,7 +7,8 @@ export default{
         imgUrl: String,
         id: Number,
         category: String,
-        collect: String
+        collect: String,
+        price: String
     }
 }
 </script>
@@ -17,8 +18,9 @@ export default{
         <div class="collect">{{ collect }}</div>
         <div class="id">{{ id }}</div>
         <div class="category">{{ category }}</div>
-        <h2>{{ title }}</h2>
         <img :src="imgUrl" alt="#">
+        <h2 class="title">{{ title }}</h2>
+        <div class="price">{{ price }}</div>
         <!-- <button>подробнее</button> -->
     </div>
 </template>
